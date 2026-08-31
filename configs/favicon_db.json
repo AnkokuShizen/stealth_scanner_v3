@@ -1,0 +1,6 @@
+{
+  "_README": "مپِ favicon hash (فرمت شودان/mm3) به appliance شناخته‌شده. هش‌های دستگاه‌های معلوم خودتان را با tools/favicon_hash.py بسازید و اینجا اضافه کنید. کلیدهایی که عدد نیستند نادیده گرفته می‌شوند.",
+  "_EXAMPLE_1": "python3 tools/favicon_hash.py https://10.10.0.1 --add 'FortiGate Login' 'Network Device'  →  خروجی را اینجا paste کنید",
+  "1111111111": {"name": "EXAMPLE — delete me (FortiGate Login Page)", "category": "Network Device"},
+  "2222222222": {"name": "EXAMPLE — delete me (VMware vCenter)", "category": "Virtualization"}
+}

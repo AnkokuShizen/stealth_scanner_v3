@@ -1,0 +1,49 @@
+# ============================================
+# Scan outputs (results of running the tool) — NEVER commit
+# These contain internal IPs, service titles, technologies, and
+# network intelligence. The file prefix is customizable (--out),
+# so patterns match ANY prefix.
+# ============================================
+*_masscan.txt
+*_prober.jsonl
+*_targets.txt
+*_results.csv
+*_summary.txt
+*_diff.txt
+*_report.html
+
+# Safety net for the default scan_<timestamp> prefix
+scan_*
+
+# ============================================
+# Sensitive user-supplied inputs
+# proxies.txt can contain credentials (socks5://user:pass@host)
+# src_ips.txt reveals your infrastructure
+# ============================================
+proxies.txt
+src_ips.txt
+
+# ============================================
+# Go build artifacts
+# ============================================
+go_prober/prober
+go_prober/prober.exe
+*.test
+
+# ============================================
+# Python
+# (orchestrator.py is stdlib-only, but tools/favicon_hash.py
+#  users may create venvs / caches)
+# ============================================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ============================================
+# Editor / OS junk
+# ============================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
